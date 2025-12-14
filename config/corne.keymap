@@ -96,7 +96,7 @@
                                       &kp LSHFT     &trans     &trans         &trans     &trans  &kp RCTRL
             //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                 >;
-            
+            };
                                                                      
             tri_layer {
                 display-name = "Tri";
