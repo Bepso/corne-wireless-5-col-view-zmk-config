@@ -85,13 +85,13 @@
                 bindings = <
             //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             //│  !       │  "       │  #       │  $       │  %       │   │    &     │  @       │  *       │  `       │  ~       │
-               &kp LS(N1)  &kp LS(N2) &kp LS(N3) &kp RA(N4) &kp LS(N5)    &kp LS(N6)  &kp RA(N2)   &kp ASTRK  &kp GRAVE   &kp TILDE
+               &kp LS(N1)  &kp LS(N2) &kp LS(N3) &kp RA(N4) &kp LS(N5)    &kp LS(N6)  &kp RA(N2) &kp LS(RBKT) &kp RBKT &kp RA(RBKT)
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│  /       │  [       │  {       │  (       │     <    │   │   '      │  -       │  =       │     :    │  ;       │
-                &kp LS(N7) &kp RA(N8) &kp RA(N7) &kp LS(N8) &kp LS(COMMA) &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+                &kp LS(N7) &kp RA(N8) &kp RA(N7) &kp LS(N8) &kp LT        &kp LS(RBKT) &kp MINUS &kp LS(N0) &kp LS(DOT) &kp LS(COMMA)
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│  \       │  ]       │  }       │  )       │      >   │   │    \     │  _       │  +       │  │       │   ?      │
-                &kp RA(N7) &kp RA(N9) &kp RA(N0) &kp LS(N9) &kp LS(DOT)     &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
+                &kp RA(N7) &kp RA(N9) &kp RA(N0) &kp LS(N9) &kp LS(LT)  &kp RA(PLUS) &kp LS(MINUS) &kp PLUS  &kp RA(LT)  &kp LS(PLUS)
             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                       &kp LSHFT     &trans     &trans         &trans     &trans  &kp RCTRL
             //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
