@@ -9,6 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+// Home row mods macro
+#define HRML(k2,k3,k4) &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
+#define HRMR(k1,k2,k3) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3
+#define WHRML(k2,k3,k4) &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
+#define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
+
 #define MAC 0
 #define RIG 1
 #define LEF 2
@@ -48,7 +54,7 @@
                 bindings = <
             //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-                &kp Q      &kp W     &kp E        &kp R      &kp T          &kp Y      &kp U     &kp I      &kp O      &kp P
+                &kp Q      HRML(W     , E        , R)      &kp T          &kp Y      HRMR( U     , I        , O)      &kp P
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │BACKSPACE │
                 &kp A       &kp S      &kp D      &kp F     &kp G          &kp H      &kp J      &kp K      &kp L      &kp BSPC
@@ -88,10 +94,10 @@
                &kp LS(N1)  &kp LS(N2) &kp LS(N3) &kp RA(N4) &kp LS(N5)    &kp LS(N6)  &kp RA(N2) &kp LS(BSLH) &trans  &kp RA(RBKT)
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│  /       │  [       │  {       │  (       │     <    │   │   '      │  -       │  =       │     :    │  ;       │
-            &kp LS(N7)    &kp RA(N8) &kp RA(LS(N8)) &kp LS(N8) &kp GRAVE   &kp BSLH &kp FSLH    &kp LS(N0) &kp LS(DOT) &kp LS(COMMA)
+            &kp LS(N7)    &kp RA(N8) &kp RA(LS(N8)) &kp LS(N8) &kp NUBS   &kp BSLH &kp FSLH    &kp LS(N0) &kp LS(DOT) &kp LS(COMMA)
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│  \       │  ]       │  }       │  )       │      >   │   │          │  _       │  +       │     │    │   ?      │
-            &kp RA(LS(N7)) &kp RA(N9) &kp RA(LS(N9)) &kp LS(N9) &kp LS(GRAVE) &trans &kp LS(FSLH) &kp MINUS  &kp RA(N7)  &kp LS(MINUS)
+            &kp RA(LS(N7)) &kp RA(N9) &kp RA(LS(N9)) &kp LS(N9) &kp LS(NUBS) &trans &kp LS(FSLH) &kp MINUS  &kp RA(N7)  &kp LS(MINUS)
             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                       &kp LSHFT     &trans     &trans         &trans     &trans  &kp RCTRL
             //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
